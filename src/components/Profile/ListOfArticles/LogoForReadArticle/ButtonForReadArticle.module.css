@@ -1,0 +1,14 @@
+.content {
+    grid-area: a;
+    background-color: gray;
+    border-right-style: ridge;
+    border-right-color: #363636;
+    border-right-width: 1px;
+    border-bottom-style: ridge;
+    border-bottom-color: #363636;
+    border-bottom-width: 1px;
+}
+
+.content img{
+    width: 20px;
+}

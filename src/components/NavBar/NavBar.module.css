@@ -1,0 +1,15 @@
+.nav {
+    grid-area: n;
+    width: 250px;
+    margin: 0;
+    background: linear-gradient(to right, black, #636363);
+    border-left-style: ridge;
+    border-left-color: #363636;
+    border-left-width: 1px;
+}
+
+.navBarFont{
+    color : #fff;
+    margin-left: 10px;
+
+ }

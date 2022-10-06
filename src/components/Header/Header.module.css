@@ -1,0 +1,18 @@
+.header {
+    margin-bottom: 0;
+    grid-area: h;
+    background: linear-gradient(to bottom, black, #636363);
+
+}
+.header img{
+    height: 100%;
+    width: 150px;
+}
+.headerLogoBackground{
+    width: 250px;
+    height: 60px;
+    background-color: black;
+    border-left-style: ridge;
+    border-left-color: #363636;
+    border-left-width: 1px;
+}
