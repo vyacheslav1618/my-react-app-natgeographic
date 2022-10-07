@@ -1,0 +1,26 @@
+.articlePage{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+
+.articlePage .articleCategories{
+    color : white;
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 5px 10px 5px 20px;
+}
+
+.articleCategories .category{
+
+}
+
+.articlePage .articlesOfSelectedCategory{
+    color : white;
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 5px 10px 5px 20px;
+}
+
+.articlesOfSelectedCategory .articlesLisOfSelectedCategory{
+
+}
