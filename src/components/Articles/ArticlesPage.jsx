@@ -10,6 +10,10 @@ const ArticleCategory = (props) => {
     </div>
 }
 
+const ArticlesListOfSelectedCategory = (props) => {
+    return <div className={s.articlesListOfSelectedCategory}>{props.message}</div>
+}
+
 const ArticlesPage = () => {
     return <div className={s.articlePage}>
 
@@ -22,12 +26,12 @@ const ArticlesPage = () => {
             <ArticleCategory name="Seas" id="seas"/>
         </div>
         <div className={s.articlesOfSelectedCategory}>
-            <div className={s.articlesLisOfSelectedCategory}>dasdas</div>
-            <div className={s.articlesLisOfSelectedCategory}>dasdas</div>
-            <div className={s.articlesLisOfSelectedCategory}>dasdas</div>
-            <div className={s.articlesLisOfSelectedCategory}>dasdas</div>
-            <div className={s.articlesLisOfSelectedCategory}>dasdas</div>
-            <div className={s.articlesLisOfSelectedCategory}>dasdas</div>
+            <ArticlesListOfSelectedCategory message = "Example Article" />
+            <ArticlesListOfSelectedCategory message = "Example Article" />
+            <ArticlesListOfSelectedCategory message = "Example Article" />
+            <ArticlesListOfSelectedCategory message = "Example Article" />
+            <ArticlesListOfSelectedCategory message = "Example Article" />
+            <ArticlesListOfSelectedCategory message = "Example Article" />
         </div>
     </div>
 }
