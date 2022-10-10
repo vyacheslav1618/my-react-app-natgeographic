@@ -3,16 +3,14 @@ import './App.css';
 
 import Header from "./components/Header/Header";
 import NavBar from "./components/NavBar/NavBar";
-import Profile from "./components/Profile/Profile";
+import {Profile} from "./components/Profile/Profile";
 import ArticlesPage from "./components/Articles/ArticlesPage";
 import {Route, Routes} from "react-router-dom";
-import AboutUs from "./components/AboutUs/AboutUs";
-import Vacancy from "./components/Vacancy/Vacancy";
-import Contacts from "./components/Contacts/Contacts";
+import {AboutUs} from "./components/AboutUs/AboutUs";
+import {Vacancy} from "./components/Vacancy/Vacancy";
+import {Contacts} from "./components/Contacts/Contacts";
 
-
-
-const App = () => {
+export const App = () => {
     return (
         <div className='commonBackground'>
             <div className='app-wrapper'>
@@ -29,6 +27,3 @@ const App = () => {
         </div>
     );
 }
-
-
-export default App;

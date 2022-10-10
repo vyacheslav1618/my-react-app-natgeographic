@@ -15,7 +15,7 @@ const ArticlesListOfSelectedCategory = (props) => {
     const path = "/articles/" + props.id
     return <div className={s.category}>
         <NavLink to={path}
-                        className={s.articlesListOfSelectedCategory}>{props.name}</NavLink>
+                 className={s.articlesListOfSelectedCategory}>{props.name}</NavLink>
     </div>
 }
 

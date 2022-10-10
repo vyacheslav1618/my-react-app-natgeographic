@@ -1,11 +1,9 @@
 import React from "react";
 import s from './Vacancy.module.css';
-import MainWallpaper from "../Profile/MainWallpaper/MainWallpaper";
+import {MainWallpaper} from "../StuffCollection/WallpapersAndPictures/MainWallpaper/MainWallpaper";
 
-const Vacancy = () => {
+export const Vacancy = () => {
     return <div className={s.content}>
         <MainWallpaper/>
     </div>
 }
-
-export default Vacancy;

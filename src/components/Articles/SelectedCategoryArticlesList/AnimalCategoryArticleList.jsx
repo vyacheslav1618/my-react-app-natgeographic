@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./Profile/ListOfArticles/Article.module.css"
-import AnimalsPicture from "../../PicturesForArticles/AnimalsPicture";
-import ButtonForReadArticle from "../../Profile/ListOfArticles/LogoForReadArticle/ButtonForReadArticle";
+import AnimalsPicture from "../../StuffCollection/WallpapersAndPictures/PicturesForArticles/AnimalsPicture";
+import ButtonForReadArticle from "../../Profile/ListOfRandomArticlesAtMainPage/LogoForReadArticle/Index";
 
 const AnimalCategoryArticleList = () => {
 

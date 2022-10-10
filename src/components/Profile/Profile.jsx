@@ -1,10 +1,10 @@
 import React from "react";
 import s from './Profile.module.css';
-import MainWallpaper from "./MainWallpaper/MainWallpaper";
 import {articles} from "../../data";
-import Article from "./ListOfArticles/Article";
+import {Article} from "./ListOfRandomArticlesAtMainPage/Article";
+import {MainWallpaper} from "../StuffCollection/WallpapersAndPictures/MainWallpaper/MainWallpaper";
 
-const Profile = () => {
+export const Profile = () => {
     const articleData = articles.slice(0, 3).map((value) => <Article title = {value.title} image = {value.image}/> )
 
     return <div className={s.content}>
@@ -12,5 +12,3 @@ const Profile = () => {
         {articleData}
     </div>
 }
-
-export default Profile;
