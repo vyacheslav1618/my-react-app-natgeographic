@@ -10,6 +10,8 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import Vacancy from "./components/Vacancy/Vacancy";
 import Contacts from "./components/Contacts/Contacts";
 
+
+
 const App = () => {
     return (
         <div className='commonBackground'>

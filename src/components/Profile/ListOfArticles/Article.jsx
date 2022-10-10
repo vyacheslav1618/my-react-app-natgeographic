@@ -8,9 +8,9 @@ import ForestsPicture from "../../PicturesForArticles/ForestsPicture";
 import OceansPicture from "../../PicturesForArticles/OceansPicture";
 import SeasPicture from "../../PicturesForArticles/SeasPicture";
 
-function getRandomIntInclusive(min, max) {
-    min = Math.ceil(0);
-    max = Math.floor(6);
+function getRandomIntInclusive() {
+    const min = Math.ceil(0);
+    const max = Math.floor(5);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
@@ -29,12 +29,13 @@ let articlePictures = [
 ]
 const Article = (props) => {
 
-
-
     return <div className={s.content}>
-        <ArticlePicture id={getRandomIntInclusive}/>
 
-        <div class='ArticleTitle'>Article Title Here</div>
+        <div class='ArticleTitle'>{props.title}</div>
+        <div className='ArticleImg'>
+            <img src={props.image} alt="failure"/>
+        </div>
+
 
         <ButtonForReadArticle/>
     </div>

@@ -1,9 +1,10 @@
 import React from "react";
 import s from './ArticlesPage.module.css'
 import {NavLink} from "react-router-dom";
+import {articlesListOfSelectedCategoryData, articleCategoryData} from "../../data";
 
 const ArticleCategory = (props) => {
-    let path = "/articles/" + props.id
+    const path = "/articles/" + props.id
     return <div className={s.category}>
         <NavLink to={path}
                  className={navData => navData.isActive ? s.active : s.category}>{props.name}</NavLink>
@@ -11,24 +12,6 @@ const ArticleCategory = (props) => {
 }
 
 const ArticlesPage = () => {
-
-    let articleCategoryData = [
-        {id: "animals", name: "Animals"},
-        {id: "microscopic-world", name: "Microscopic World"},
-        {id: "insects", name: "Insects"},
-        {id: "forests", name: "Forests"},
-        {id: "oceans", name: "Oceans"},
-        {id: "seas", name: "Seas"}
-    ]
-
-    let articlesListOfSelectedCategoryData = [
-        {id: "example-article0", name: "Example Article 0"},
-        {id: "example-article1", name: "Example Article 1"},
-        {id: "example-article2", name: "Example Article 2"},
-        {id: "example-article3", name: "Example Article 3"},
-        {id: "example-article4", name: "Example Article 4"},
-        {id: "example-article5", name: "Example Article 5"}
-    ]
 
     return <div className={s.articlePage}>
         <div className={s.articleCategories}>
