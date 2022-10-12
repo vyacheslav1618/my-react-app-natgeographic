@@ -1,5 +1,5 @@
 .content {
-    grid-area: c;
+    grid-area: contentArea;
     background-color: black;
     border-right-style: ridge;
     border-right-color: #363636;

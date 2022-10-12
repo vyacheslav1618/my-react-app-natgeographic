@@ -1,5 +1,5 @@
 .nav {
-    grid-area: n;
+    grid-area: leftSideNavBar;
     width: 250px;
     margin: 0;
     background: linear-gradient(to right, black, #636363);

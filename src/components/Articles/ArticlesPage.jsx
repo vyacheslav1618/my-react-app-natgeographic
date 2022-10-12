@@ -1,7 +1,7 @@
 import React from "react";
 import s from './ArticlesPage.module.css'
 import {NavLink} from "react-router-dom";
-import {articlesListOfSelectedCategoryData, articleCategoryData} from "../../data";
+import {articlesListOfSelectedCategoryData, articleCategoryData} from "../../redux/data";
 
 const ArticleCategory = (props) => {
     const path = "/articles/" + props.id

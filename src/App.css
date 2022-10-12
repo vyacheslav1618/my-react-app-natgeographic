@@ -1,20 +1,19 @@
 .app-wrapper {
     display: grid;
-    width: 1500px;
+    width: 1500px; /*here need to fix a size*/
     background-color: black;
     margin: 0 auto;
     grid-template-areas:
-"h h"
-"n c";
+"logo upperNavBar"
+"leftSideNavBar contentArea";
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
     grid-gap: 0px;
 }
 
-
-.commonBackground{
+.commonBackground {
     background-color: black;
-    margin: 0;
-    width: 100%;
-    height: 100%;
+    margin: 0 0 0 0;
+    width: 10%;
+    height: 10%;
 }

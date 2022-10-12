@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Article.module.css';
 import {ButtonForReadArticle} from "../../StuffCollection/Buttons/ButtonForReadArticle";
-import {LogoForArticleTitle} from "../../StuffCollection/Logos/LogoForArticleTitle/LogoForArticleTitle";
+import {LogoForArticleTitle} from "../../StuffCollection/Logos/LogoForArticleTitle";
 
 export const Article = (props) => {
 

@@ -7,4 +7,10 @@
     border-bottom-style: ridge;
     border-bottom-color: #363636;
     border-bottom-width: 1px;
+
+}
+
+.contentImg {
+    /*object-fit: cover;
+    width: auto;*/
 }
