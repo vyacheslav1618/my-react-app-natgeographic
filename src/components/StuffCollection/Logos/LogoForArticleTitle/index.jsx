@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./index.css"
+import s from "./index.module.css"
 
 export const LogoForArticleTitle = () => {
     return <div className={s.logoForArticleTitle}>

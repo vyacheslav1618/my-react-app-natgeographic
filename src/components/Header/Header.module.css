@@ -1,10 +1,5 @@
 .horizontalBar {
     grid-area: upperNavBar;
-    margin-bottom: 0;
+    width: 100%;
     background: linear-gradient(to bottom, black, #636363);
-
 }
-/*.horizontalBar img{
-    height: 100%;
-    width: 7%;
-}*/

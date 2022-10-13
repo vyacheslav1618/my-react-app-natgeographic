@@ -1,5 +1,7 @@
 .content {
     grid-area: contentArea;
+    overflow-y: scroll;
+    height: 100%;
     background-color: black;
     border-right-style: ridge;
     border-right-color: #363636;

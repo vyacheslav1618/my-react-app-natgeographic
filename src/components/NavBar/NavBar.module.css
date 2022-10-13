@@ -1,11 +1,8 @@
 .nav {
     grid-area: leftSideNavBar;
-    width: 250px;
-    margin: 0;
+    width: 100%;
     background: linear-gradient(to right, black, #636363);
-    border-left-style: ridge;
-    border-left-color: #363636;
-    border-left-width: 1px;
+
 }
 
 .navBarFont{
