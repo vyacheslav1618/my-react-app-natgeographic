@@ -1,10 +1,13 @@
 .content {
-    grid-area: c;
+    grid-area: contentArea;
+    overflow-y: scroll;
+    height: 100%;
     background-color: black;
-    border-right-style: ridge;
-    border-right-color: #363636;
-    border-right-width: 1px;
-    border-bottom-style: ridge;
-    border-bottom-color: #363636;
-    border-bottom-width: 1px;
+}
+
+.descriptionText {
+    color: white;
+    font-size: 15px;
+    position: center;
+    padding: 20px;
 }

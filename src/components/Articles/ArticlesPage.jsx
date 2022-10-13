@@ -26,7 +26,6 @@ const articlesListOfSelectedCategoryDataElements = articlesListOfSelectedCategor
     .map(al => <ArticlesListOfSelectedCategory name={al.name}/>)
 
 const ArticlesPage = () => {
-
     return <div className={s.articlePage}>
         <div className={s.articleCategories}>
             {articleCategoryDataElements}

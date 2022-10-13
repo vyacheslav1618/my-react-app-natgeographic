@@ -5,5 +5,8 @@ import {MainWallpaper} from "../StuffCollection/WallpapersAndPictures/MainWallpa
 export const Vacancy = () => {
     return <div className={s.content}>
         <MainWallpaper/>
+        <div className={s.descriptionText}>
+            The available vacancies will be displayed here.
+        </div>
     </div>
 }
