@@ -6,26 +6,27 @@ export const Contacts = () => {
     return <div className={s.content}>
         <MainWallpaper/>
         <div className={s.descriptionText}>
-            <p>Our tel./fax : +123 456 789</p>
+            <p>Our tel./fax : +123 456 789 101</p>
             <p>e-mail : nat@geo.com</p>
             <p>You can contact us for complaints and suggestions. Please, fill out the form below</p>
             <div className={s.appealForm}>
                 <form>
-                    <input className={s.upperAreas}type="text" placeholder="Please, enter your name" minLength="2"
-                           maxLength="50" size="50"/>
-                </form>
-                <form>
-                    <input className={s.upperAreas} type="email" maxLength="50" size="50" placeholder="Please, enter your E-mail"/>
-                </form>
-                <form>
-                    <textarea className={s.appealArea} rows="12" cols="50" minLength="20" maxLength="7000"
-                           placeholder="Please, enter your appeal here..."/>
-                </form>
-                <form>
-                    <input id="attachments" type="file"/>
-                </form>
-                <form>
-                    <input  className={s.formButton} type="submit"/>
+                    <div>
+                        <input className={s.upperAreas} type="text" placeholder="Please, enter your name" minLength="2"
+                               maxLength="50" size="50"/>
+                    </div>
+                    <div>
+                        <input className={s.upperAreas} type="email" required maxLength="50" size="50"
+                               placeholder="Please, enter your E-mail"/>
+                    </div>
+                    <textarea className={s.appealArea} rows="10" cols="50" minLength="20" maxLength="7000"
+                              placeholder="Please, enter your appeal here..."></textarea>
+                    <div>
+                        <input id="attachments" type="file"/>
+                    </div>
+                    <div>
+                        <input className={s.formButton} type="submit"/>
+                    </div>
                 </form>
             </div>
         </div>
