@@ -11,3 +11,25 @@
     position: center;
     padding: 20px;
 }
+
+.appealForm {
+    margin: 50px 20px 10px 20px;
+}
+
+.appealArea {
+    width: 40%;
+    min-width: 200px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.upperAreas {
+    margin-bottom: 10px;
+    min-width: 200px;
+    width: 30%;
+}
+
+.formButton {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
