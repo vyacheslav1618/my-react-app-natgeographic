@@ -5,15 +5,15 @@ import {articlesListOfSelectedCategoryData, articleCategoryData} from "../../red
 
 const ArticleCategory = (props) => {
     const path = "/articles/" + props.id
-    return <div className={s.category}>
+    return <div className={s.articleSelectedBar}>
         <NavLink to={path}
-                 className={navData => navData.isActive ? s.active : s.category}>{props.name}</NavLink>
+                 className={navData => navData.isActive ? s.active : s.articleSelectedBarFont}>{props.name}</NavLink>
     </div>
 }
 
 const ArticlesListOfSelectedCategory = (props) => {
     const path = "/articles/" + props.id
-    return <div className={s.category}>
+    return <div className={s.articleSelectedBar}>
         <NavLink to={path}
                  className={s.articlesListOfSelectedCategory}>{props.name}</NavLink>
     </div>
@@ -27,7 +27,7 @@ const articlesListOfSelectedCategoryDataElements = articlesListOfSelectedCategor
 
 const ArticlesPage = () => {
     return <div className={s.articlePage}>
-        <div className={s.articleCategories}>
+        <div className={s.articleCategoriesBar}>
             {articleCategoryDataElements}
         </div>
         <div className={s.articlesListOfSelectedCategory}>

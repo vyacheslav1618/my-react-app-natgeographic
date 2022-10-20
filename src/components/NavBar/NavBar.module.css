@@ -25,7 +25,9 @@
 }
 
 .navActiveBarFont {
-    background: rgba(255, 255, 255, 10%);
+    background: linear-gradient(to right,
+    rgba(255, 255, 255, 20%),
+    rgba(255, 255, 255, 0%));
     color: #ffd600;
     width: 100%;
     box-sizing: border-box;
