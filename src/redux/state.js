@@ -1,19 +1,15 @@
-export const state = [
-    {
-        appeals: [
-            {id: 0, name: "", email: "", appeal: ""}
-        ]
-    }
+export const state =
+    [
+        {id: 0, name: "", email: "", appeal: ""}
+    ]
 
-
-]
-
-export const addAppeal = (props) => {
+export const addAppeal = (appealTextOfAppeal) => {
+    console.log(appealTextOfAppeal);
     const newAppeal = {
         id: 1,
-        name: props.userNameOfAppeal,
-        email: props.emailOfAppeal,
-        appeal: props.appealTextOfAppeal
+        name: "John Doe",
+        email: "email@mail.ru",
+        appeal: appealTextOfAppeal
     };
-    state.appeals.push(newAppeal);
+    state.push(newAppeal);
 }

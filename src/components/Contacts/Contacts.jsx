@@ -8,13 +8,16 @@ export const Contacts = (props) => {
     const emailOfAppeal = React.createRef();
     const appealTextOfAppeal = React.createRef();
 
-    const addAppeal = () => {
-        const newCreatedAppeal = [
-            userNameOfAppeal.current.value,
-            emailOfAppeal.current.value,
-            appealTextOfAppeal.current.value
-        ];
-            props.addAppeal(newCreatedAppeal);
+    const clickAddAppeal = () => {
+
+        const newCreatedAppeal = appealTextOfAppeal.current.value;
+        /*[
+        userNameOfAppeal.current.value,
+        emailOfAppeal.current.value,
+        appealTextOfAppeal.current.value
+    ];*/
+        props.addAppeal(newCreatedAppeal);
+        alert("Thank you! Your appeal has been send!");
     }
 
     return <div className={s.content}>
@@ -27,20 +30,23 @@ export const Contacts = (props) => {
             <div className={s.appealForm}>
                 <form>
                     <div>
-                        <input className={s.upperAreas} ref={userNameOfAppeal} type="text" placeholder="Please, enter your name" minLength="2"
+                        <input className={s.upperAreas} ref={userNameOfAppeal} type="text"
+                               placeholder="Please, enter your name" minLength="2"
                                maxLength="50" size="50"/>
                     </div>
                     <div>
-                        <input className={s.upperAreas} ref={emailOfAppeal} type="email" required maxLength="50" size="50"
+                        <input className={s.upperAreas} ref={emailOfAppeal} type="email" required maxLength="50"
+                               size="50"
                                placeholder="Please, enter your E-mail"/>
                     </div>
-                    <textarea className={s.appealArea} ref={appealTextOfAppeal} rows="10" cols="50" minLength="20" maxLength="7000"
+                    <textarea className={s.appealArea} ref={appealTextOfAppeal} rows="10" cols="50" minLength="20"
+                              maxLength="7000"
                               placeholder="Please, enter your appeal here..."></textarea>
                     <div>
                         <input id="attachments" type="file"/>
                     </div>
                     <div>
-                        <input className={s.formButton} onClick={addAppeal} type="submit"/>
+                        <input className={s.formButton} onClick={clickAddAppeal} type="submit"/>
                     </div>
                 </form>
             </div>
