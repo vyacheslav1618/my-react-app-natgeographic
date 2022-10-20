@@ -10,12 +10,11 @@ export const Contacts = (props) => {
 
     const clickAddAppeal = () => {
 
-        const newCreatedAppeal = appealTextOfAppeal.current.value;
-        /*[
-        userNameOfAppeal.current.value,
-        emailOfAppeal.current.value,
-        appealTextOfAppeal.current.value
-    ];*/
+        const newCreatedAppeal = {
+            name: userNameOfAppeal.current.value,
+            email: emailOfAppeal.current.value,
+            appeal: appealTextOfAppeal.current.value
+        };
         props.addAppeal(newCreatedAppeal);
         alert("Thank you! Your appeal has been send!");
     }

@@ -11,7 +11,6 @@ import NavBar from "./components/NavBar/NavBar";
 import {Header} from "./components/Header/Header";
 import {MainLogoNatGeo} from "./components/StuffCollection/Logos/MainLogoNatGeo";
 import {WelcomePage} from "./components/WelcomePage/WelcomePage";
-import {addAppeal} from "./redux/state";
 
 
 export const App = (props) => {
@@ -26,7 +25,7 @@ export const App = (props) => {
                 <Route path="/articles/*" element={<ArticlesPage/>}/>
                 <Route path="/about-us" element={<AboutUs/>}/>
                 <Route path="/vacancy" element={<Vacancy/>}/>
-                <Route path="/contacts" element={<Contacts state={props.state.appeals} addAppeal={props.addAppeal}/>}/>
+                <Route path="/contacts" element={<Contacts addAppeal={props.addAppeal}/>}/>
             </Routes>
         </div>
     );
