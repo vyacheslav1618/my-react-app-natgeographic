@@ -1,27 +1,8 @@
 import React from "react";
-import s from "./Profile/ListOfArticles/Article.module.css"
-import AnimalsPicture from "../../StuffCollection/WallpapersAndPictures/PicturesForArticles/AnimalsPicture";
-import ButtonForReadArticle from "../../Profile/ListOfRandomArticlesAtMainPage/LogoForReadArticle/Index";
-import MicroscopicWorldPicture from "../../StuffCollection/WallpapersAndPictures/PicturesForArticles/MicroscopicWorldPicture";
+import s from "./ArticleList.module.css"
 
-const MicroscopicWorldCategoryArticleList = () => {
-
-    const MicroscopicWorldCategoryArticle = () => {
-        return <div>
-            <MicroscopicWorldPicture/>
-            <div className='ArticleTitle'>ASD</div>
-            <ButtonForReadArticle/>
-        </div>
-    }
-
+export const MicroscopicWorldCategoryArticleList = () => {
     return <div className={s.content}>
-        <MicroscopicWorldCategoryArticle/>
-        <MicroscopicWorldCategoryArticle/>
-        <MicroscopicWorldCategoryArticle/>
-        <MicroscopicWorldCategoryArticle/>
-        <MicroscopicWorldCategoryArticle/>
-        <MicroscopicWorldCategoryArticle/>
+        <div><h2>This area will contains FLEX-list of articles about Microscopic World</h2></div>
     </div>
 }
-
-export default MicroscopicWorldCategoryArticleList;

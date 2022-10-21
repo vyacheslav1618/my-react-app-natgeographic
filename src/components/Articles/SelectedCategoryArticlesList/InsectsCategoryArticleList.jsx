@@ -1,27 +1,9 @@
 import React from "react";
-import s from "./Profile/ListOfArticles/Article.module.css"
-import AnimalsPicture from "../../StuffCollection/WallpapersAndPictures/PicturesForArticles/AnimalsPicture";
-import ButtonForReadArticle from "../../Profile/ListOfRandomArticlesAtMainPage/LogoForReadArticle/Index";
-import InsectsPicture from "../../StuffCollection/WallpapersAndPictures/PicturesForArticles/InsectsPicture";
+import s from "./ArticleList.module.css"
 
-const InsectsCategoryArticleList = () => {
-
-    const InsectCategoryArticle = () => {
-        return <div>
-            <InsectsPicture/>
-            <div className='ArticleTitle'>ASD</div>
-            <ButtonForReadArticle/>
-        </div>
-    }
+export const InsectsCategoryArticleList = () => {
 
     return <div className={s.content}>
-        <InsectCategoryArticle/>
-        <InsectCategoryArticle/>
-        <InsectCategoryArticle/>
-        <InsectCategoryArticle/>
-        <InsectCategoryArticle/>
-        <InsectCategoryArticle/>
+        <div><h2>This area will contains FLEX-list of articles about Insects</h2></div>
     </div>
 }
-
-export default InsectsCategoryArticleList;

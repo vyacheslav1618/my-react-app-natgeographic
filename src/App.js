@@ -21,11 +21,11 @@ export const App = (props) => {
             <NavBar/>
             <Routes>
                 <Route path="/" element={<WelcomePage/>}/>
-                <Route path="/profile" element={<Profile/>}/>
+                <Route path="/profile/*" element={<Profile/>}/>
                 <Route path="/articles/*" element={<ArticlesPage/>}/>
-                <Route path="/about-us" element={<AboutUs/>}/>
-                <Route path="/vacancy" element={<Vacancy/>}/>
-                <Route path="/contacts" element={<Contacts addAppeal={props.addAppeal}/>}/>
+                <Route path="/about-us/*" element={<AboutUs/>}/>
+                <Route path="/vacancy/*" element={<Vacancy/>}/>
+                <Route path="/contacts/*" element={<Contacts addAppeal={props.addAppeal}/>}/>
             </Routes>
         </div>
     );

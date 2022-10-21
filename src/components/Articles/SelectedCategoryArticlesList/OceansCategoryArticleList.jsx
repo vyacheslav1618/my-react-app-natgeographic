@@ -1,27 +1,8 @@
 import React from "react";
-import s from "./Profile/ListOfArticles/Article.module.css"
-import AnimalsPicture from "../../StuffCollection/WallpapersAndPictures/PicturesForArticles/AnimalsPicture";
-import ButtonForReadArticle from "../../Profile/ListOfRandomArticlesAtMainPage/LogoForReadArticle/Index";
-import OceansPicture from "../../StuffCollection/WallpapersAndPictures/PicturesForArticles/OceansPicture";
+import s from "./ArticleList.module.css"
 
-const OceansCategoryArticleList = () => {
-
-    const OceansCategoryArticle = () => {
-        return <div>
-            <OceansPicture/>
-            <div className='ArticleTitle'>ASD</div>
-            <ButtonForReadArticle/>
-        </div>
-    }
-
+export const OceansCategoryArticleList = () => {
     return <div className={s.content}>
-        <OceansCategoryArticle/>
-        <OceansCategoryArticle/>
-        <OceansCategoryArticle/>
-        <OceansCategoryArticle/>
-        <OceansCategoryArticle/>
-        <OceansCategoryArticle/>
+        <div><h2>This area will contains FLEX-list of articles about Oceans</h2></div>
     </div>
 }
-
-export default OceansCategoryArticleList;

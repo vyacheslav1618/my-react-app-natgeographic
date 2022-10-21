@@ -8,12 +8,12 @@ export const articleCategoryData = [
 ]
 
 export const articlesListOfSelectedCategoryData = [
-    {id: "example-article0", name: "Example Article 0"},
-    {id: "example-article1", name: "Example Article 1"},
-    {id: "example-article2", name: "Example Article 2"},
-    {id: "example-article3", name: "Example Article 3"},
-    {id: "example-article4", name: "Example Article 4"},
-    {id: "example-article5", name: "Example Article 5"}
+    {id: "animals-articles", name: "Animals Articles"},
+    {id: "forests-articles", name: "Forests Articles"},
+    {id: "insects-articles", name: "Insects Articles"},
+    {id: "microscopic-world-articles", name: "Microscopic World Articles"},
+    {id: "oceans-articles", name: "Oceans Articles"},
+    {id: "seas-articles", name: "Seas Articles"}
 ]
 export const category = {
     animals: "Animals",

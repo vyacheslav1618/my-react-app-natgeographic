@@ -6,7 +6,7 @@ import {LogoForArticleTitle} from "../../StuffCollection/Logos/LogoForArticleTit
 export const Article = (props) => {
 
     return <div className={s.content}>
-        <div className='ArticleImg'>
+        <div className="ArticleImg">
             <img src={props.image} alt="failure"/>
         </div>
         <div className='ArticleTitle'>{props.title}</div>

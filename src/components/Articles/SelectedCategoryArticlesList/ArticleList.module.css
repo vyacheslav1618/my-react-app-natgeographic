@@ -1,0 +1,5 @@
+.content {
+    grid-area: rightSideContentArea;
+    background: black;
+    color: white;
+}
