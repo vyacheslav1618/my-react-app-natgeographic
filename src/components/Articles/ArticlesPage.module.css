@@ -1,55 +1,29 @@
-/*.articlePage {
-    display: grid;
-    grid-template-columns: 230px auto;
-    text-decoration: none;
-}*/
 .articlePage {
+    display: grid;
+    height: 100%;
     grid-template-areas:
-    "lefSideSecondNavBarArea" "rightSideContentArea";
+    "lefSideSecondNavBarArea rightSideContentArea";
     grid-template-columns: 230px auto;
     text-decoration: none;
 }
 
 .articleCategoriesBar {
-    background: linear-gradient(to right, #636363, black);
-    grid-area: lefSideSecondNavBarArea;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(6, 60px);
-    color: white;
-    text-decoration: none;
-}/*.articleCategoriesBar {
-    background: linear-gradient(to right, #636363, black);
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(6, 60px);
-    color: white;
-    text-decoration: none;
-}*/
-
-.articleSelectedBar {
-    grid-area: lefSideSecondNavBarArea;
-    grid-template-rows: 100% auto;
-    text-align: left;
-    display: inline-block;
-}/*.articleSelectedBar {
-    display: grid;
-    grid-template-rows: 100% auto;
-    text-align: left;
-    display: inline-block;
-}*/
-
-.articleSelectedBarFont {
-    color: white;
-    display: inline-block;
-    box-sizing: border-box;
-    line-height: 60px;
     width: 100%;
-    text-decoration: none;
-    font-size: 18px;
-    padding-left: 20px;
+    display: grid;
+    grid-area: lefSideSecondNavBarArea;
+    background: linear-gradient(to right, #636363, black);
+    grid-template-rows: repeat(6, 60px);
+    grid-template-columns: 100%;
+    align-items: center;
 }
 
-.active {
+.articleSelectedBar {
+    text-align: left;
+    display: inline-block;
+}
+
+.articleActiveBarFont {
+    grid-area: lefSideSecondNavBarArea;
     background: linear-gradient(to right,
     rgba(255, 255, 255, 10%),
     rgba(255, 255, 255, 1%));
@@ -58,31 +32,22 @@
     box-sizing: border-box;
     text-decoration: none;
     line-height: 60px;
-    font-size: 20px;
+    font-size: 18px;
     display: inline-block;
     padding-left: 30px;
     border-left: 3px solid #ffd600;
 }
 
-.category {
+.articleSelectedBarFont {
+    grid-area: lefSideSecondNavBarArea;
+    grid-template-rows: repeat(6, 60px);
+    grid-template-columns: 100%;
     color: white;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 60px;
+    width: 230px;
     text-decoration: none;
+    font-size: 18px;
+    padding-left: 20px;
 }
-
-.articlesOfSelectedCategory {
-    color: white;
-    margin-left: 0px;
-    text-decoration: none;
-    padding: 0px 10px 0px 20px;
-
-}
-
-.articlesListOfSelectedCategory {
-    color: white;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 100%;
-    text-decoration: none;
-}
-
-
