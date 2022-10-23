@@ -9,14 +9,18 @@ export const Contacts = (props) => {
     const appealTextOfAppeal = React.createRef();
 
     const clickAddAppeal = () => {
-
-        const newCreatedAppeal = {
+        let newCreatedAppeal = {
             name: userNameOfAppeal.current.value,
             email: emailOfAppeal.current.value,
             appeal: appealTextOfAppeal.current.value
         };
         props.addAppeal(newCreatedAppeal);
         alert("Thank you! Your appeal has been send!");
+    }
+
+    const onAppealChange = () => {
+        let text = appealTextOfAppeal.current.value;
+        props.updateNewAppealText(text);
     }
 
     return <div className={s.content}>
@@ -38,8 +42,12 @@ export const Contacts = (props) => {
                                size="50"
                                placeholder="Please, enter your E-mail"/>
                     </div>
-                    <textarea className={s.appealArea} ref={appealTextOfAppeal} rows="10" cols="50" minLength="20"
-                              maxLength="7000"
+                    <textarea className={s.appealArea}
+                              onChange={onAppealChange}
+                              value={props.newAppealText}
+                              ref={appealTextOfAppeal}
+                              rows="10" cols="50"
+                              minLength="20" maxLength="7000"
                               placeholder="Please, enter your appeal here..."></textarea>
                     <div>
                         <input id="attachments" type="file"/>
