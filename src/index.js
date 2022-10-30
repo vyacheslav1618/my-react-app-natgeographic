@@ -7,9 +7,8 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 import {addAppeal, updateNewAppealText} from "./redux/state";
 
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
 const rerenderEntireTree = (state) => {
-    const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(
         <React.StrictMode>
             <BrowserRouter>
