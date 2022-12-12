@@ -1,13 +1,9 @@
-.content {
-    grid-area: contentArea;
-    overflow-y: scroll;
-    height: 100%;
-    background-color: black;
-}
-
 .descriptionText {
+    flex-direction: column;
     color: white;
     font-size: 15px;
     position: center;
     padding: 20px;
+    margin: 50px;
+    align-self: center;
 }

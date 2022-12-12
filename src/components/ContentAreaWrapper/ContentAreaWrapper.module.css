@@ -1,0 +1,7 @@
+.ContentAreaWrapper {
+    grid-area: lowerArea;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    overflow: scroll;
+}

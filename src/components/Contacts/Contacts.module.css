@@ -1,10 +1,3 @@
-.content {
-    grid-area: contentArea;
-    overflow-y: scroll;
-    height: 100%;
-    background-color: black;
-}
-
 .descriptionText {
     color: white;
     font-size: 15px;
@@ -35,7 +28,12 @@
 }
 
 .contactLink {
+    margin: 20px;
     color: white;
     font-size: 18px;
     text-decoration: none;
+}
+
+.textRow {
+    margin: 20px;
 }

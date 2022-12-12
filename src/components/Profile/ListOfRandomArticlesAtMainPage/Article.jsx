@@ -5,12 +5,38 @@ import {LogoForArticleTitle} from "../../StuffCollection/Logos/LogoForArticleTit
 
 export const Article = (props) => {
 
-    return <div className={s.content}>
-        <div className="ArticleImg">
-            <img src={props.image} alt="failure"/>
+    return <div className={s.profilePageContent}>
+
+        <div className={s.articleImgAndIconsArea}>
+
+            <div className={s.articleImg}>
+                <img src={props.image} alt="failure"/>
+            </div>
+
+            <div className={s.articleIcons}>
+                <div className={s.button1}><LogoForArticleTitle/></div>
+                <div className={s.button2}><ButtonForReadArticle/></div>
+                <div className={s.button3}><p>fav icon</p></div>
+
+
+
+            </div>
+
+
         </div>
-        <div className='ArticleTitle'>{props.title}</div>
-        <LogoForArticleTitle/>
-        <ButtonForReadArticle/>
+
+        <div className={s.titleAndBodyArea}>
+
+            <div className={s.articleTitle}>
+                <p>{props.title}</p>
+            </div>
+
+            <div className={s.articleBody}>
+                <p>text example</p>
+            </div>
+
+        </div>
+
+
     </div>
 }

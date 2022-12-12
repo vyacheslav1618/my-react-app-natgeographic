@@ -1,21 +1,16 @@
-.content {
-    grid-area: contentArea;
-    overflow-y: scroll;
-    height: 100%;
-    background-color: black;
-}
-
 .descriptionText {
     color: white;
     font-size: 15px;
     position: center;
     padding: 20px;
+    margin: 20px;
 }
 
 .headerText {
-    font-size: 35px;
+    font-size: 32px;
     color: white;
     font-weight: bold;
     position: center;
     padding: 20px;
+    margin: 20px;
 }

@@ -1,10 +1,7 @@
 .banner {
-    background : url("https://i.pinimg.com/originals/f1/ea/9f/f1ea9f05f02a9144bc8c007e8b604f5b.jpg") no-repeat;
-    height: 350px;
+    grid-area: upperArea;
+    background : url("https://i.pinimg.com/originals/f1/ea/9f/f1ea9f05f02a9144bc8c007e8b604f5b.jpg") no-repeat center;
+    height: 100%;
     width: 100%;
-    background-position: center;
     background-size: cover;
-    border-bottom-style: ridge;
-    border-bottom-color: #363636;
-    border-bottom-width: 1px;
 }
