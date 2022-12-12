@@ -22,13 +22,16 @@ export const Contacts = (props) => {
         let text = appealTextOfAppeal.current.value;
         props.dispatch({type: 'UPDATE-NEW-APPEAL-TEXT', newText: text});
     }
-debugger
+
     return <div className={s.content}>
 
         <MainWallpaper/>
         <div className={s.descriptionText}>
-            <p>Our tel./fax : +123 456 789 101</p>
-            <p>e-mail : nat@geo.com</p>
+            <div>
+                <a className={s.contactLink} href="mailto:nat@geo.com">Click here to email us</a>
+                <p> or </p>
+                <a className={s.contactLink} href="tel:+123456789">Call us. +1 (2) 345 67 89</a>
+            </div>
             <p>You can contact us for complaints and suggestions. Please, fill out the form below</p>
             <div className={s.appealForm}>
                 <form>
