@@ -14,15 +14,15 @@ export const Contacts = (props) => {
             email: emailOfAppeal.current.value,
             appeal: appealTextOfAppeal.current.value
         };
-        props.addAppeal(newCreatedAppeal);
+        props.dispatch({type: 'ADD-APPEAL', newCreatedAppeal});
         alert("Thank you! Your appeal has been send!");
     }
 
     const onAppealChange = () => {
         let text = appealTextOfAppeal.current.value;
-        props.updateNewAppealText(text);
+        props.dispatch({type: 'UPDATE-NEW-APPEAL-TEXT', newText: text});
     }
-
+debugger
     return <div className={s.content}>
 
         <MainWallpaper/>

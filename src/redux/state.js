@@ -12,10 +12,10 @@ export let store = {
         this._state.newAppealText = '';
         this._callSubscriber(this._state);
     },*/
-    updateNewAppealText(newText) {
+    /*updateNewAppealText(newText) {
         this._state.newAppealText = newText;
         this._callSubscriber(this._state);
-    },
+    },*/
     subscribe(observer) {
         this._callSubscriber = observer;
     },
@@ -26,6 +26,10 @@ export let store = {
         if(action.type === 'ADD-APPEAL'){
             this._state.appeals.push(action.newCreatedAppeal);
             this._state.newAppealText = '';
+            this._callSubscriber(this._state);
+        }else if(action.type === 'UPDATE-NEW-APPEAL-TEXT'){
+            this._state.newAppealText = action.newText;
+            console.log(action);
             this._callSubscriber(this._state);
         }
     },

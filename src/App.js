@@ -23,10 +23,11 @@ export const App = (props) => {
                 <Route path="/articles/*" element={<ArticlesPage/>}/>
                 <Route path="/about-us/*" element={<AboutUs/>}/>
                 <Route path="/vacancy/*" element={<Vacancy/>}/>
-                <Route path="/contacts/*" element={<Contacts newAppealText={props.state.newAppealText}
+                <Route path="/contacts/*" element={<Contacts dispatch={props.dispatch}
+                                                            /*newAppealText={props.state.newAppealText}
                                                              appeals={props.state.appeals}
                                                              updateNewAppealText={props.updateNewAppealText}
-                                                             addAppeal={props.addAppeal}/>}/>
+                                                             addAppeal={props.addAppeal}*//>}/>
             </Routes>
         </div>
     );
