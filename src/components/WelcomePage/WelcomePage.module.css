@@ -1,6 +1,12 @@
-.startContent {
+.content {
     grid-area: contentArea;
-    overflow-y: scroll;
+    display: grid;
+    grid-template-areas:
+        "upperArea"
+        "lowerArea";
+    grid-template-rows: 1fr 2.5fr;
+    grid-template-columns: 1fr;
+    overflow-y: hidden;
     height: 100%;
     background-color: black;
 }

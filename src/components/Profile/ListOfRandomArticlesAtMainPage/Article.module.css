@@ -28,7 +28,6 @@
 
 .articleImg {
     grid-area: a2;
-
     padding: 20px 20px 30px 20px;
     align-self: center;
 }
@@ -59,6 +58,19 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.articleIcons:hover {
+    grid-area: a3;
+    display: grid;
+    grid-template-areas:
+            "a4 a5 a6";
+    grid-template-columns: 1fr 1fr 1fr;
+    background: linear-gradient(to top,
+    rgba(255, 255, 255, 20%),
+    rgba(255, 255, 255, 0%));
+    color: #ffd600;
+    border-bottom: 1px solid #ffd600;
+}
+
 .articleTitle {
     grid-area: b2;
 }
@@ -73,14 +85,32 @@
     margin: auto;
 }
 
+.button1:hover {
+    grid-area: a4;
+    align-self: center;
+    margin: auto;
+}
+
+.button1:hover svg {
+    fill: #ffd600;
+}
+
 .button2 {
     grid-area: a5;
     align-self: center;
     margin: auto;
 }
 
+.button2:hover svg {
+    fill: #ffd600;
+}
+
 .button3 {
     grid-area: a6;
     align-self: center;
     margin: auto;
+}
+
+.button3:hover svg {
+    fill: #ffd600;
 }
