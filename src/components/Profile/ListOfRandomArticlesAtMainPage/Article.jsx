@@ -3,6 +3,7 @@ import s from './Article.module.css';
 import {ReactComponent as Share} from "../../StuffCollection/Logos/Svg/Share.svg";
 import {ReactComponent as Book} from "../../StuffCollection/Logos/Svg/Book.svg";
 import {ReactComponent as Favorite} from "../../StuffCollection/Logos/Svg/Favorite.svg";
+import {ProfilePageArticleTitleAndBody} from "../../ProfilePageArticleTitleAndBody/ProfilePageArticleTitleAndBody";
 
 export const Article = (props) => {
 
@@ -25,17 +26,9 @@ export const Article = (props) => {
 
         </div>
 
-        <div className={s.titleAndBodyArea}>
+        <ProfilePageArticleTitleAndBody title={props.title}/>
 
-            <div className={s.articleTitle}>
-                <p>{props.title}</p>
-            </div>
 
-            <div className={s.articleBody}>
-                <p>text example</p>
-            </div>
-
-        </div>
 
 
     </div>
