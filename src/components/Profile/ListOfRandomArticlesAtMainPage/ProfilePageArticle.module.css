@@ -1,0 +1,17 @@
+.profilePageContent {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "a1 b1";
+    background-color: black;
+    border-right-style: ridge;
+    border-right-color: #363636;
+    border-right-width: 1px;
+    border-bottom-style: ridge;
+    border-bottom-color: #363636;
+    border-bottom-width: 1px;
+    color: white;
+}

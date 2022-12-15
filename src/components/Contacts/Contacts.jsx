@@ -3,6 +3,7 @@ import c from '../ContentAreaWrapper/content.module.css';
 import s from './Contacts.module.css';
 import {MainWallpaper} from "../StuffCollection/WallpapersAndPictures/MainWallpaper";
 import {ContentAreaWrapper} from "../ContentAreaWrapper/ContentAreaWrapper";
+import {ContactIconsBar} from "../ContactIconsBar/ContactIconsBar";
 
 export const Contacts = (props) => {
 
@@ -26,15 +27,22 @@ export const Contacts = (props) => {
     }
 
     return <div className={c.content}>
+
         <MainWallpaper/>
+
         <ContentAreaWrapper>
+
             <div className={s.descriptionText}>
+
+                <ContactIconsBar/>
+
                 <div>
                     <a className={s.contactLink} href="mailto:nat@geo.com">Click here to email us: nat@geo.com</a>
                     <p className={s.textRow}> or </p>
                     <a className={s.contactLink} href="tel:+123456789">Call us: +1 (2) 345 67 89</a>
                 </div>
-                <p className={s.textRow}>You can contact us for complaints and suggestions. Please, fill out the form below</p>
+                <p className={s.textRow}>You can contact us for complaints and suggestions. Please, fill out the form
+                    below</p>
                 <div className={s.appealForm}>
                     <form>
                         <div>

@@ -1,6 +1,8 @@
 .content {
-    width: 100%;
+    height: 100%;
     grid-area: rightSideContentArea;
-    background: black;
-    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
 }

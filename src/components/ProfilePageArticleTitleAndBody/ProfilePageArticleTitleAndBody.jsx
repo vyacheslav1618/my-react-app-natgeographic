@@ -6,8 +6,11 @@ import {ProfilePageArticleBody} from "../ProfilePageArticleBody/ProfilePageArtic
 export const ProfilePageArticleTitleAndBody = (props) => {
     return (
         <div className={s.titleAndBodyArea}>
+
             <ProfilePageArticleTitle title={props.title}/>
+
             <ProfilePageArticleBody />
+
         </div>
     );
 };

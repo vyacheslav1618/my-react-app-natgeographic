@@ -42,9 +42,9 @@ const ArticleCategory = () => {
 const ArticlesPage = () => {
     return <div className={s.articlePage}>
         <ArticleCategory/>
-        <div>
+        <div className={s.routesWrapper}>
             <Routes>
-                <Route path="animals" element={<AnimalsCategoryArticleList/>}/>
+                <Route path="animals" element={<AnimalsCategoryArticleList />}/>
                 <Route path="forests" element={<ForestsCategoryArticleList/>}/>
                 <Route path="insects" element={<InsectsCategoryArticleList/>}/>
                 <Route path="microscopic-world" element={<MicroscopicWorldCategoryArticleList/>}/>

@@ -1,0 +1,9 @@
+.articleImgAndIconsArea {
+    grid-area: a1;
+    display: grid;
+    grid-template-areas:
+        "a2"
+        "a3";
+    grid-template-rows: 6fr 1fr;
+    grid-template-columns: 1fr;
+}

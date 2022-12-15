@@ -1,9 +1,21 @@
 import React from "react";
 import s from "./ArticleList.module.css"
+import {ArticlesPageItem} from "../../ArticlesPageItem/ArticlesPageItem";
+
+
 
 export const AnimalsCategoryArticleList = () => {
-
     return <div className={s.content}>
-        <div className={s.content}><h2>This area will contains FLEX-list of articles about animals</h2></div>
+        <ArticlesPageItem/>
+        <ArticlesPageItem/>
+        <ArticlesPageItem/>
+        <ArticlesPageItem/>
+        <ArticlesPageItem/>
+        <ArticlesPageItem/>
+        <ArticlesPageItem/>
+        <ArticlesPageItem/>
+        <ArticlesPageItem/>
+        <ArticlesPageItem/>
+        <ArticlesPageItem/>
     </div>
 }

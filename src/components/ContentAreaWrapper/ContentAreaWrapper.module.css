@@ -1,4 +1,4 @@
-.ContentAreaWrapper {
+.contentAreaWrapper {
     grid-area: lowerArea;
     display: flex;
     flex-flow: column;

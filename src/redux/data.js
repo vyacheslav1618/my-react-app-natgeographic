@@ -27,42 +27,42 @@ export const category = {
 export const articles = [
     {
         id: 1,
-        title: "asd",
+        title: "Article Title #1",
         content: "fgh",
         image: "https://aldf.org/wp-content/uploads/2018/05/lamb-iStock-665494268-16x9-e1559777676675-1200x675.jpg",
         category: "animals"
     },
     {
         id: 2,
-        title: "jnonm",
+        title: "Article Title #2",
         content: "fgh",
         image: "https://static.nationalgeographic.co.uk/files/styles/image_3200/public/02_nikonsmallworld_2---stentors.jpg?w=1190&h=1786",
         category: "mw"
     },
     {
         id: 3,
-        title: "ikbhj",
+        title: "Article Title #3",
         content: "fgh",
         image: "https://static.nationalgeographic.co.uk/files/styles/image_3200/public/5.jpeg?w=1190&h=852",
         category: "insect"
     },
     {
         id: 4,
-        title: "asd",
+        title: "Article Title #4",
         content: "fgh",
         image: "https://i.natgeofe.com/n/cf6a4389-1017-496f-88ff-539626f5832f/NationalGeographic_754676.jpg?w=1024&h=683",
         category: "forests"
     },
     {
         id: 5,
-        title: "asd",
+        title: "Article Title #5",
         content: "fgh",
         image: "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2017_50/2261201/ngnp-honmen1-underwater.jpg",
         category: "oceans"
     },
     {
         id: 6,
-        title: "asd",
+        title: "Article Title #6",
         content: "fgh",
         image: "https://cdn.theatlantic.com/media/img/photo/2012/11/national-geographic-photo-contest-2012-part-ii/n04_swimming/main_1200.jpg",
         category: "seas"

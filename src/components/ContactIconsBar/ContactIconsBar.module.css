@@ -1,0 +1,15 @@
+.contactIconsBar {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.messageButton:hover svg {
+    fill: #ffd600;
+}
+
+.phoneButton:hover svg {
+    fill: #ffd600;
+}
